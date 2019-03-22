@@ -6,7 +6,7 @@ Ring queue behave like a regular queue except it has fixed capacity. Whenever th
 In this assignment, we are using the regular array as our container. The push_back and pop_front function need to be adjusted in order to fit our ring queue definition.
 
 The project is created by Xcode so it has couples of unrelated files.
-Please go to [here](ring_queue/ring_queue.cpp) to check the document
+Please go to [here](ring_queue/ring_queue/ring_queue.cpp) to check the document
 
 # Functions: push_back and pop_front
 ![](push-and-pop.png)
