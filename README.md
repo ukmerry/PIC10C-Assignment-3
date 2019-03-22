@@ -3,6 +3,16 @@ The objective of the assignment 3 is to create a ring_queue with self-customized
 
 Ring queue behave like a regular queue except it has fixed capacity. Whenever the queue reaches its maximum, the next item pushed will take over the first item in the queue.
 
-In this assignment, we are using the regular array as our container. The push_back and pop_front function need to be adjusted in order to fit our ring queue definition
+In this assignment, we are using the regular array as our container. The push_back and pop_front function need to be adjusted in order to fit our ring queue definition.
 
-# Guide
+The project is created by Xcode so it has couples of unrelated files.
+Please go to [here](ring_queue/ring_queue.cpp) to check the document
+
+# Functions: push_back and pop_front
+![](push-and-pop.png)
+
+# Iterator
+![](iterator.png)
+
+# Result
+![](result.png)
