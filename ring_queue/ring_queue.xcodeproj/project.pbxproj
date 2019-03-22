@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B61BC7122459B99004F5F90 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B61BC7022459B99004F5F90 /* main.cpp */; };
+		4B61BC7122459B99004F5F90 /* ring_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B61BC7022459B99004F5F90 /* ring_queue.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		4B61BC6D22459B99004F5F90 /* ring_queue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ring_queue; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B61BC7022459B99004F5F90 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4B61BC7022459B99004F5F90 /* ring_queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ring_queue.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		4B61BC6F22459B99004F5F90 /* ring_queue */ = {
 			isa = PBXGroup;
 			children = (
-				4B61BC7022459B99004F5F90 /* main.cpp */,
+				4B61BC7022459B99004F5F90 /* ring_queue.cpp */,
 			);
 			path = ring_queue;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B61BC7122459B99004F5F90 /* main.cpp in Sources */,
+				4B61BC7122459B99004F5F90 /* ring_queue.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
