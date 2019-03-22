@@ -56,28 +56,28 @@ public:
     
   public:
     reference operator*() {
-      // Replace the line(s) below with your code.
-      return parent->buffer[0] ;
+      //compute the correct index in buffer(array), that is (offset + begin_index) % capacity
+      //then we can locate the address of our value
+      //return the reference of our value
+      return parent->buffer[(offset + parent->begin_index) % MAX_SIZE] ;
     }
     
     iterator& operator++(){
-      // Replace the line(s) below with your code.
+      offset++; //move the iterator to the right
       return *this;
     }
     
     iterator operator++( int unused ){
-      // Replace the line(s) below with your code.
+      offset++; //move the iterator to the right
       return *this;
     }
     
     bool operator==( const iterator& rhs ) const {
-      // Replace the line(s) below with your code.
-      return true;
+      return offset == rhs.offset; //compare their index, if they are the same, return true
     }
     
     bool operator!=( const iterator& rhs ) const {
-      // Replace the line(s) below with your code.
-      return true;
+      return offset != rhs.offset; //compare their index, if they are not the same, return true
     }
     
   }; // end of iterator class
