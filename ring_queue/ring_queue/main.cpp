@@ -127,7 +127,7 @@ private:
   // A helper function that computes the index of 'the end' of the RingQueue
   int end_index() const {
     // Replace the line(s) below with your code.
-    return begin_index;
+    return (begin_index + ring_size) % MAX_SIZE;
   }
   
   
@@ -161,10 +161,35 @@ public:
   
   // Mutators
   void push_back( const ItemType& value ){
+    
+    //set the value in the array[endpoint]
+    buffer[end_index()] = value;
+    
+    //check if the ring_size reaches the capacity
+    if (ring_size < MAX_SIZE)
+      ring_size++; //if no, increment ring size
+    else
+      //if yes, check if the begin_index reaches the capacity
+      if (begin_index < MAX_SIZE)
+        begin_index++; //if no, increment begin_index
+      else
+        begin_index = 0; //if yes, reset begin_index to 0
+    
     return;
   }
   
   void pop_front(){
+    
+    //check if the begin_index reaches the capacity
+    if (begin_index < MAX_SIZE)
+      begin_index++; //if no, increment begin_index
+    else
+      begin_index = 0; //if yes, reset begin_index to 0
+    
+    //decrement ring_size whenever ring_size > 0
+    if (ring_size > 0)
+      ring_size--;
+    
     return;
   }
   
