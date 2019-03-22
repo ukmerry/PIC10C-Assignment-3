@@ -143,8 +143,7 @@ public:
     // Feel free to throw instead...
     
     
-    // Replace the line(s) below with your code.
-    return buffer[0];
+    return buffer[begin_index];
   }
   
   ItemType back() const {
@@ -153,8 +152,7 @@ public:
     // Feel free to throw instead...
     
     
-    // Replace the line(s) below with your code.
-    return buffer[0];
+    return buffer[end_index()];
   }
   
   
@@ -196,20 +194,17 @@ public:
   
   // Functions that return iterators
   iterator begin() {
-    // Replace the line(s) below with your code.
     return iterator(this,0);
   }
   
   iterator end() {
-    // Replace the line(s) below with your code.
-    return iterator(this,0);
+    return iterator(this,MAX_SIZE-1);
   }
   
   
   // Miscellaneous functions
   size_t size() const {
-    // Replace the line(s) below with your code.
-    return 0;
+    return ring_size;
   }
   
   // Debugging functions
@@ -248,17 +243,11 @@ int main(){
   
   
   
-  // Uncomment the block below only when you have a working implementation of
-  // RingQueue<ItemType,int>::end().  If the implementation is not correct, it
-  // might result in an infinite loop.
-  /**
-   std::cout << "Queue via iterators:\n";
-   for ( auto it = rq.begin() ; it != rq.end() ; ++it ) {
-   std::cout << "Value: " << *it << ", address: " << &(*it) << '\n';
-   }
-   std::cout << '\n';
-   */
-  
+  std::cout << "Queue via iterators:\n";
+  for ( auto it = rq.begin() ; it != rq.end() ; ++it ) {
+  std::cout << "Value: " << *it << ", address: " << &(*it) << '\n';
+  }
+  std::cout << '\n';
   
   
   rq.dump_queue();
