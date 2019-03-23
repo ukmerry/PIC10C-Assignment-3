@@ -1,3 +1,7 @@
+# My other repository
+Final Project: https://github.com/ukmerry/PI0C-Final-Project.git
+Assigment 2:
+
 # PIC10C-Assignment-3
 The objective of the assignment 3 is to create a ring_queue with self-customized iterator
 
