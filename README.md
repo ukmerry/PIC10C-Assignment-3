@@ -1,6 +1,8 @@
-# My other repository
+# My Other Repository
+Please go check them out
 Final Project: https://github.com/ukmerry/PI0C-Final-Project.git
-Assigment 2:
+Assigment 2: https://github.com/ukmerry/PIC10C-GradeCalculator.git
+Assigment 1: 
 
 # PIC10C-Assignment-3
 The objective of the assignment 3 is to create a ring_queue with self-customized iterator
